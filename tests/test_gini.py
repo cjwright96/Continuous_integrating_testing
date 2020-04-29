@@ -22,8 +22,8 @@ def test_gini_single():
     '''
     gini = calculate_gini(pd.Series([1.0]))
     
-    raise NotImplementedError("Please Implement This Test")
-
+    assert gini == 0.0
+    
 def test_gini_four():
     '''test calculating a gini coefficient with four different items'''
     gini = calculate_gini(pd.Series([1.0, 2.0, 3.0, 4.0]))
